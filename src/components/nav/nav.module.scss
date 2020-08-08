@@ -1,0 +1,68 @@
+.title {
+  color: #444444;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.promosBar {
+  color: #eeeeee;
+  font-weight: 500;
+  background-color: #444444;
+  padding-left: 0.5rem;
+  padding-top: 4px;
+}
+
+.duradekLogo {
+  width: 6%;
+  height: auto;
+  margin: 2px 2px 0 2px;
+}
+
+.navBar {
+  background-color: #f3bd37;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  a {
+    text-decoration: none;
+    color: #646464;
+  }
+
+  a:hover {
+    color: #444444;
+  }
+
+  a:active {
+    color: #444444;
+  }
+}
+
+.menuItem {
+  padding-right: 1rem;
+}
+
+.button {
+  background-color: #f3bd37;
+  color: #646464;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid #646464;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  color: #444444;
+  border: 1px solid #646464;
+}
