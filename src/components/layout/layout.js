@@ -19,9 +19,11 @@ const Layout = props => {
       <div>
         <Image />
       </div>
-      <div className={layoutStyles.container}>
-        <div className={layoutStyles.content}>{props.children}</div>
-        <Footer />
+      <div className={layoutStyles.body}>
+        <div className={layoutStyles.container}>
+          <div className={layoutStyles.content}>{props.children}</div>
+          <Footer />
+        </div>
       </div>
     </div>
   )

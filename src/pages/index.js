@@ -6,6 +6,8 @@ import Services from "../components/services"
 import OurWork from "../components/ourWork"
 import Contact from "../components/contact"
 
+import "../styles/index.scss"
+
 const IndexPage = () => (
   <div>
     <Layout>
