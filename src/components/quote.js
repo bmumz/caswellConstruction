@@ -1,12 +1,18 @@
 import React from "react"
-import bodyStyles from "./layout/body.module.scss"
+import layoutStyles from "./layout/layout.module.scss"
 
 const Quote = () => {
   return (
     <div id="quote">
-      <h3 className={bodyStyles.yellowBg}>
-        Have a project you keep putting off? Request your FREE QUOTE today!
-      </h3>
+      <div className={layoutStyles.quoteContainer}>
+        <div className={layoutStyles.quote}>
+          Have a project you keep putting off?
+          <br />
+          Request your{" "}
+          <button className={layoutStyles.quoteButton}>FREE QUOTE</button>{" "}
+          today!
+        </div>
+      </div>
     </div>
   )
 }

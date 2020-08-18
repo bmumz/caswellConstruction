@@ -1,38 +1,46 @@
+$primary-color: #444444;
+$secondary-color: #f3bd37;
+$font-color: #eeeeee;
+
 .title {
-  color: #444444;
+  color: $primary-color;
   font-weight: 400;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .promosBar {
-  color: #eeeeee;
+  color: $font-color;
   font-weight: 500;
-  background-color: #444444;
+  background-color: $primary-color;
   padding-left: 0.5rem;
   padding-top: 4px;
 }
 
 .duradekLogo {
-  width: 6%;
-  height: auto;
+  min-width: 90px;
+  max-width: 5%;
   margin: 2px 2px 0 2px;
 }
 
 .navBar {
-  background-color: #f3bd37;
-  display: flex;
-  flex-direction: row;
+  background-color: $secondary-color;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // flex-direction: row;
+  // justify-content: space-between;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
-  width: 60%;
   justify-content: flex-end;
-  margin-top: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 0.9rem;
 
   a {
     text-decoration: none;
@@ -40,11 +48,11 @@
   }
 
   a:hover {
-    color: #444444;
+    color: $primary-color;
   }
 
   a:active {
-    color: #444444;
+    color: $primary-color;
   }
 }
 
@@ -53,11 +61,11 @@
 }
 
 .button {
-  background-color: #f3bd37;
+  background-color: $secondary-color;
   color: #646464;
   text-transform: uppercase;
   outline: none;
-  border: 1px solid #646464;
+  border: 0.5px solid #646464;
   cursor: pointer;
   letter-spacing: 1px;
 }
@@ -65,4 +73,14 @@
 button:hover {
   color: #444444;
   border: 1px solid #646464;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    letter-spacing: normal;
+    font-size: 0.7rem;
+  }
+  .button {
+    letter-spacing: normal;
+  }
 }

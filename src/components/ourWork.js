@@ -1,37 +1,103 @@
 import React from "react"
-import bodyStyles from "./layout/body.module.scss"
+import layoutStyles from "./layout/layout.module.scss"
 
 const OurWork = () => {
   return (
     <div>
-      <h1 className={bodyStyles.title} id="work">
+      <h1 className={layoutStyles.title} id="work">
         Our Work
       </h1>
-      <div className={bodyStyles.instaContainer}>
-        <div className={bodyStyles.instaPost}>
+      <div className={layoutStyles.instaContainer}>
+        <div className={layoutStyles.instaPost}>
           <blockquote
             className="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/p/CCvv778HvPH/?utm_source=ig_embed&utm_campaign=loading"
             data-instgrm-version={12}
+            style={{
+              background: "#FFF",
+              border: 0,
+              borderRadius: 3,
+              boxShadow:
+                "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
+              margin: 1,
+              maxWidth: 540,
+              minWidth: 326,
+              padding: 0,
+              width: "calc(100% - 2px)",
+            }}
           >
-            <div>
+            <div style={{ padding: 16 }}>
               {" "}
               <a
                 href="https://www.instagram.com/p/CCvv778HvPH/?utm_source=ig_embed&utm_campaign=loading"
+                style={{
+                  background: "#FFFFFF",
+                  lineHeight: 0,
+                  padding: "0 0",
+                  textAlign: "center",
+                  textDecoration: "none",
+                  width: "100%",
+                }}
                 target="_blank"
-                rel="noreferrer"
               >
                 {" "}
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                  }}
+                >
                   {" "}
-                  <div />{" "}
-                  <div>
+                  <div
+                    style={{
+                      backgroundColor: "#F4F4F4",
+                      borderRadius: "50%",
+                      flexGrow: 0,
+                      height: 40,
+                      marginRight: 14,
+                      width: 40,
+                    }}
+                  />{" "}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      flexGrow: 1,
+                      justifyContent: "center",
+                    }}
+                  >
                     {" "}
-                    <div /> <div />
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        borderRadius: 4,
+                        flexGrow: 0,
+                        height: 14,
+                        marginBottom: 6,
+                        width: 100,
+                      }}
+                    />{" "}
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        borderRadius: 4,
+                        flexGrow: 0,
+                        height: 14,
+                        width: 60,
+                      }}
+                    />
                   </div>
                 </div>
-                <div />{" "}
-                <div>
+                <div style={{ padding: "19% 0" }} />{" "}
+                <div
+                  style={{
+                    display: "block",
+                    height: 50,
+                    margin: "0 auto 12px",
+                    width: 50,
+                  }}
+                >
                   <svg
                     width="50px"
                     height="50px"
@@ -57,47 +123,195 @@ const OurWork = () => {
                     </g>
                   </svg>
                 </div>
-                <div>
+                <div style={{ paddingTop: 8 }}>
                   {" "}
-                  <div> View this post on Instagram</div>
+                  <div
+                    style={{
+                      color: "#3897f0",
+                      fontFamily: "Arial,sans-serif",
+                      fontSize: 14,
+                      fontStyle: "normal",
+                      fontWeight: 550,
+                      lineHeight: 18,
+                    }}
+                  >
+                    {" "}
+                    View this post on Instagram
+                  </div>
                 </div>
-                <div />{" "}
-                <div>
+                <div style={{ padding: "12.5% 0" }} />{" "}
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginBottom: 14,
+                    alignItems: "center",
+                  }}
+                >
                   <div>
                     {" "}
-                    <div /> <div /> <div />
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        borderRadius: "50%",
+                        height: "12.5px",
+                        width: "12.5px",
+                        transform: "translateX(0px) translateY(7px)",
+                      }}
+                    />{" "}
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        height: "12.5px",
+                        transform:
+                          "rotate(-45deg) translateX(3px) translateY(1px)",
+                        width: "12.5px",
+                        flexGrow: 0,
+                        marginRight: 14,
+                        marginLeft: 2,
+                      }}
+                    />{" "}
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        borderRadius: "50%",
+                        height: "12.5px",
+                        width: "12.5px",
+                        transform: "translateX(9px) translateY(-18px)",
+                      }}
+                    />
                   </div>
-                  <div>
+                  <div style={{ marginLeft: 8 }}>
                     {" "}
-                    <div /> <div />
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        borderRadius: "50%",
+                        flexGrow: 0,
+                        height: 20,
+                        width: 20,
+                      }}
+                    />{" "}
+                    <div
+                      style={{
+                        width: 0,
+                        height: 0,
+                        borderTop: "2px solid transparent",
+                        borderLeft: "6px solid #f4f4f4",
+                        borderBottom: "2px solid transparent",
+                        transform:
+                          "translateX(16px) translateY(-4px) rotate(30deg)",
+                      }}
+                    />
                   </div>
-                  <div>
+                  <div style={{ marginLeft: "auto" }}>
                     {" "}
-                    <div /> <div /> <div />
+                    <div
+                      style={{
+                        width: 0,
+                        borderTop: "8px solid #F4F4F4",
+                        borderRight: "8px solid transparent",
+                        transform: "translateY(16px)",
+                      }}
+                    />{" "}
+                    <div
+                      style={{
+                        backgroundColor: "#F4F4F4",
+                        flexGrow: 0,
+                        height: 12,
+                        width: 16,
+                        transform: "translateY(-4px)",
+                      }}
+                    />{" "}
+                    <div
+                      style={{
+                        width: 0,
+                        height: 0,
+                        borderTop: "8px solid #F4F4F4",
+                        borderLeft: "8px solid transparent",
+                        transform: "translateY(-4px) translateX(8px)",
+                      }}
+                    />
                   </div>
                 </div>{" "}
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    flexGrow: 1,
+                    justifyContent: "center",
+                    marginBottom: 24,
+                  }}
+                >
                   {" "}
-                  <div /> <div />
+                  <div
+                    style={{
+                      backgroundColor: "#F4F4F4",
+                      borderRadius: 4,
+                      flexGrow: 0,
+                      height: 14,
+                      marginBottom: 6,
+                      width: 224,
+                    }}
+                  />{" "}
+                  <div
+                    style={{
+                      backgroundColor: "#F4F4F4",
+                      borderRadius: 4,
+                      flexGrow: 0,
+                      height: 14,
+                      width: 144,
+                    }}
+                  />
                 </div>
               </a>
-              <p>
+              <p
+                style={{
+                  color: "#c9c8cd",
+                  fontFamily: "Arial,sans-serif",
+                  fontSize: 14,
+                  lineHeight: 17,
+                  marginBottom: 0,
+                  marginTop: 8,
+                  overflow: "hidden",
+                  padding: "8px 0 7px",
+                  textAlign: "center",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}
+              >
                 <a
                   href="https://www.instagram.com/p/CCvv778HvPH/?utm_source=ig_embed&utm_campaign=loading"
+                  style={{
+                    color: "#c9c8cd",
+                    fontFamily: "Arial,sans-serif",
+                    fontSize: 14,
+                    fontStyle: "normal",
+                    fontWeight: "normal",
+                    lineHeight: 17,
+                    textDecoration: "none",
+                  }}
                   target="_blank"
-                  rel="noreferrer"
                 >
                   A post shared by Caswell Construction (@caswellconstruction03)
                 </a>{" "}
                 on{" "}
-                <time dateTime="2020-07-17T14:11:26+00:00">
+                <time
+                  style={{
+                    fontFamily: "Arial,sans-serif",
+                    fontSize: 14,
+                    lineHeight: 17,
+                  }}
+                  dateTime="2020-07-17T14:11:26+00:00"
+                >
                   Jul 17, 2020 at 7:11am PDT
                 </time>
               </p>
             </div>
           </blockquote>
+          ;
         </div>
-        <div className={bodyStyles.instaPost}>
+        <div className={layoutStyles.instaPost}>
           <blockquote
             className="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/p/CCzq0TSH6La/?utm_source=ig_embed&utm_campaign=loading"
@@ -401,7 +615,7 @@ const OurWork = () => {
             </div>
           </blockquote>
         </div>
-        <div className={bodyStyles.instaPost}>
+        <div className={layoutStyles.instaPost}>
           <blockquote
             className="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/p/CDXZE8_Hb9i/?utm_source=ig_embed&utm_campaign=loading"

@@ -1,11 +1,11 @@
 import React from "react"
-import bodyStyles from "./layout/body.module.scss"
+import layoutStyles from "./layout/layout.module.scss"
 
 const Services = () => {
   return (
     <div>
-      <div className={bodyStyles.infoContainer}></div>
-      <h1 className={bodyStyles.title} id="services">
+      <div className={layoutStyles.infoContainer}></div>
+      <h1 className={layoutStyles.title} id="services">
         Our Services
       </h1>
     </div>
