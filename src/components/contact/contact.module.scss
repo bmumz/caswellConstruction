@@ -1,0 +1,65 @@
+$primary-color: #444444;
+$secondary-color: #f3bd37;
+$font-color: #eeeeee;
+
+.title {
+  color: $secondary-color;
+}
+
+.infoContainer {
+  color: $font-color;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+.exit-button {
+  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.input {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}

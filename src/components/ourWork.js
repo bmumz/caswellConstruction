@@ -39,6 +39,7 @@ const OurWork = () => {
                   width: "100%",
                 }}
                 target="_blank"
+                rel="noreferrer"
               >
                 {" "}
                 <div
@@ -292,6 +293,7 @@ const OurWork = () => {
                     textDecoration: "none",
                   }}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   A post shared by Caswell Construction (@caswellconstruction03)
                 </a>{" "}
