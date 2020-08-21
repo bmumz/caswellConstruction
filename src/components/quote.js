@@ -3,16 +3,29 @@ import layoutStyles from "./layout/layout.module.scss"
 import Modal from "../components/modal/Modal"
 
 class Quote extends Component {
-  state = {
-    show: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      show: false,
+    }
+    this.windowOffset = 0
   }
 
   showModal = () => {
-    this.setState({ show: true })
+    this.setState({ show: true }, () => {
+      this.windowOffset = window.scrollY
+      document.body.setAttribute(
+        "style",
+        `position: fixed; top: -${this.windowOffset}px; left: 0; right: 0;`
+      )
+    })
   }
 
   hideModal = () => {
-    this.setState({ show: false })
+    this.setState({ show: false }, () => {
+      document.body.setAttribute("style", ``)
+      window.scrollTo(0, this.windowOffset)
+    })
   }
 
   render() {
@@ -30,11 +43,7 @@ class Quote extends Component {
             >
               FREE QUOTE
             </button>{" "}
-            <Modal
-              show={this.state.show}
-              handleClose={this.hideModal}
-              handleOpen={this.showModal}
-            />
+            <Modal show={this.state.show} handleClose={this.hideModal} />
             today!
           </div>
         </div>
