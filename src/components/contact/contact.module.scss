@@ -3,6 +3,10 @@ $secondary-color: #f3bd37;
 $font-color: #eeeeee;
 
 .title {
+  color: $font-color;
+}
+
+.subtitle {
   color: $secondary-color;
 }
 
@@ -32,19 +36,17 @@ $font-color: #eeeeee;
   align-items: center;
   margin: 0 auto;
   padding: 0.5rem;
-  width: 100%;
+  width: 20vw;
   height: auto;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 25%;
+  width: 20vw;
   height: auto;
 }
 .exit-button {
-  min-width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -58,21 +60,35 @@ $font-color: #eeeeee;
 }
 
 .textbox {
-  min-width: 100%;
+  min-width: 24vw;
+  max-width: 24vw;
+  min-height: 20vh;
+  font-size: 15px;
+  line-height: normal;
   padding: 5px;
   border-radius: 5px;
   border: 0.5px solid $primary-color;
 }
 .input {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 20vw;
+  min-width: 20vw;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   min-width: 120%;
   padding: 5px;
   border-radius: 5px;
   border: 0.5px solid $primary-color;
   font-size: 15px;
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 320px) {

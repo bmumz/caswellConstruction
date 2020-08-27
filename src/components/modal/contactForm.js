@@ -19,9 +19,11 @@ class ContactForm extends Component {
               Message
             </label>
             <textarea className={contactStyles.textbox}></textarea>
-            <button className="submitbutton" onClick="" type="submit">
-              submit
-            </button>
+            <div className={contactStyles.buttonContainer}>
+              <button className={contactStyles.button} onClick="" type="submit">
+                submit
+              </button>
+            </div>
           </form>
         </div>
       </div>
