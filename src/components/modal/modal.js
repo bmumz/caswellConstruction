@@ -1,19 +1,29 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
+import ContactForm from "../modal/contactForm"
 import "./modal.css"
 
 const Modal = ({ show, handleClose }) => {
   const showHideClassName = show ? "modal do-display" : "modal dont-display"
+  const outside = useRef(null)
+
+  useEffect(() => {
+    document.addEventListener("click", console.log("click"))
+
+    return () => {
+      document.removeEventListener("unclick", console.log("click"))
+    }
+  }, [])
 
   return (
-    <div className={showHideClassName}>
+    <div className={showHideClassName} ref={outside}>
       <div className="form">
-        <form className="modal-main">
+        <div className="modal-main">
           <div className="button-container">
             {" "}
             <button onClick={handleClose}>&times;</button>
           </div>
-          FORM GOES HERE
-        </form>
+          <ContactForm> </ContactForm>
+        </div>
       </div>
     </div>
   )

@@ -7,6 +7,7 @@
   left: 0;
   z-index: 999;
   background: rgba(0, 0, 0, 0.6);
+  overflow: scroll;
 }
 
 .button-container {
@@ -18,11 +19,13 @@
 .modal-main {
   position: fixed;
   background: white;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  min-height: 80%;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: scroll;
 }
 
 .do-display {
@@ -31,4 +34,21 @@
 
 .dont-display {
   display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-main {
+    max-height: 50%;
+    height: auto;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .modal-main {
+    max-height: 50%;
+    max-width: 50%;
+    height: auto;
+    padding: 15px;
+  }
 }

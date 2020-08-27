@@ -16,11 +16,32 @@ $font-color: #eeeeee;
   padding: 1rem;
 }
 
+.dynamic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  overflow: scroll;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25%;
+  height: auto;
 }
 .exit-button {
   min-width: 400px;
@@ -29,37 +50,38 @@ $font-color: #eeeeee;
   justify-content: flex-end;
 }
 
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 15px;
+}
+
+.textbox {
+  min-width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid $primary-color;
+}
 .input {
   max-width: 400px;
   min-width: 400px;
+  display: flex;
+  align-items: center;
+  min-width: 120%;
   padding: 5px;
   border-radius: 5px;
-  outline: none;
+  border: 0.5px solid $primary-color;
+  font-size: 15px;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.modal-main {
-  position: fixed;
-  background: white;
-  width: 80%;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
+@media only screen and (max-width: 320px) {
+  .form {
+    width: 100%;
+    overflow: scroll;
+  }
+  .textbox {
+    min-width: 0;
+    max-width: 0;
+  }
 }
