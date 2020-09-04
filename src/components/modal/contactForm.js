@@ -11,7 +11,11 @@ class ContactForm extends Component {
     return (
       <div className={contactStyles.dynamic}>
         <div className={contactStyles.formContainer}>
-          <form onSubmit={this.handleSubmit} className={contactStyles.form}>
+          <form
+            id="emailform"
+            onSubmit={this.handleSubmit}
+            className={contactStyles.form}
+          >
             <ContactInput inputType="Name" />
             <ContactInput inputType="Email" />
             <ContactInput inputType="Subject" />

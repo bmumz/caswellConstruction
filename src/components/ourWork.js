@@ -7,7 +7,7 @@ const OurWork = () => {
       <h1 className={layoutStyles.title} id="work">
         Our Work
       </h1>
-      <div className={layoutStyles.instaContainer}>
+      <div className={layoutStyles.rowContainer}>
         <div className={layoutStyles.instaPost}>
           <blockquote
             className="instagram-media"
