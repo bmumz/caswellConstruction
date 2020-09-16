@@ -22,7 +22,7 @@ const Modal = ({ show, handleClose }) => {
             {" "}
             <button onClick={handleClose}>&times;</button>
           </div>
-          <ContactForm> </ContactForm>
+          <ContactForm />
         </div>
       </div>
     </div>
