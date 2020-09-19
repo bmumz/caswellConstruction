@@ -10,6 +10,7 @@ class ContactForm extends Component {
     this.onEmailChange = this.onEmailChange.bind(this)
     this.onSubjectChange = this.onSubjectChange.bind(this)
     this.onMsgChange = this.onMsgChange.bind(this)
+    this.onSubmitEmail = this.onSubmitEmail.bind(this)
     this.state = {
       name: "",
       email: "",
@@ -30,73 +31,83 @@ class ContactForm extends Component {
     this.setState({ message: event.target.value })
   }
 
-  submitEmail = event => {
-    alert("Submitted " + this.state.message)
+  onSubmitEmail = event => {
     event.preventDefault()
-    axios({
-      method: "POST",
-      url: "/send",
-      data: this.state,
-    }).then(response => {
-      if (response.data.status === "success") {
-        alert("Message Sent.")
-        this.resetForm()
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.")
-      }
-    })
-  }
+    let name = this.state.name
+    let email = this.state.email
+    let subject = this.state.subject
+    let message = this.state.message
 
-  resetForm() {
-    this.setState({ name: "", email: "", subject: "", message: "" })
+    let data = { name, email, subject, message }
+
+    axios.post("http://localhost:8001/contact", {
+      headers: { "Content-Type": "application/json" },
+      body: {
+        data,
+      },
+    })
   }
 
   render() {
     return (
       <div className={contactStyles.dynamic}>
-        <div className={contactStyles.formContainer}>
-          <form
-            id="emailform"
-            onSubmit={this.submitEmail}
-            className={contactStyles.form}
-            method="POST"
-          >
-            <ContactInput
-              inputType="Name"
-              required
-              value={this.state.name}
-              onChange={this.onNameChange}
-            />
-            <ContactInput
-              inputType="Email"
-              required
-              value={this.state.email}
-              onChange={this.onEmailChange}
-            />
-            <ContactInput
-              required
-              inputType="Subject"
-              value={this.state.subject}
-              onChange={this.onSubjectChange}
-            />
+        <h3>
+          Contact Us
+          <br />
+          <u>For a Free Quote!</u>
+        </h3>
+        <form
+          id="contact-form"
+          onSubmit={this.onSubmitEmail}
+          className={contactStyles.form}
+          action="http://localhost:8001/contact"
+          method="POST"
+        >
+          <ContactInput
+            id="name"
+            inputType="Name"
+            required
+            value={this.state.name}
+            onChange={this.onNameChange}
+            className={contactStyles.formInput}
+          />
+          <ContactInput
+            id="email"
+            inputType="Email"
+            required
+            value={this.state.email}
+            onChange={this.onEmailChange}
+            className={contactStyles.formInput}
+          />
 
-            <label htmlFor="Message" className={contactStyles.label}>
-              Message
-              <textarea
-                className={contactStyles.textbox}
-                required
-                value={this.state.message}
-                onChange={this.onMsgChange}
-              ></textarea>
-            </label>
+          <ContactInput
+            id="subject"
+            required
+            inputType="Subject"
+            value={this.state.subject}
+            onChange={this.onSubjectChange}
+            className={contactStyles.formInput}
+          />
+          <div className={contactStyles.formInput}>
+            <textarea
+              id="message"
+              placeholder="Enter your message..."
+              className={contactStyles.textbox}
+              required
+              value={this.state.message}
+              onChange={this.onMsgChange}
+            ></textarea>
+            {/* </label> */}
+          </div>
 
-            <div className={contactStyles.buttonContainer}>
-              <button className={contactStyles.button} type="submit">
-                submit
-              </button>
-            </div>
-          </form>
-        </div>
+          <div className={contactStyles.buttonContainer}>
+            <input
+              className={contactStyles.button}
+              type="submit"
+              value="send message"
+            />
+          </div>
+        </form>
       </div>
     )
   }

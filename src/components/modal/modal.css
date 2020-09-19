@@ -16,6 +16,12 @@
   justify-content: flex-end;
 }
 
+.button {
+  color: #eeeeee;
+  background-color: #444444;
+  border: none;
+  margin: 5px;
+}
 .modal-main {
   position: fixed;
   background: white;
@@ -41,13 +47,14 @@
     max-height: 50%;
     height: auto;
     padding: 15px;
+    width: 80vw;
   }
 }
 
 @media only screen and (max-width: 350px) {
   .modal-main {
     max-height: 50%;
-    max-width: 50%;
+    width: 80vw;
     height: auto;
     padding: 15px;
   }

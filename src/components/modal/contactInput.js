@@ -6,18 +6,19 @@ class ContactInput extends Component {
     let { inputType, onChange } = this.props
 
     return (
-      <div>
-        <label className={contactStyles.label} htmlFor={inputType}>
-          {inputType}
-          <input
-            required
-            type={inputType}
-            name={inputType}
-            id={inputType}
-            onChange={onChange}
-            className={contactStyles.input}
-          />
-        </label>
+      <div className={contactStyles.form}>
+        {/* <label className={contactStyles.label} htmlFor={inputType}> */}
+        {/* {inputType} */}
+        <input
+          required
+          placeholder={inputType}
+          type={inputType}
+          name={inputType}
+          id={inputType}
+          onChange={onChange}
+          className={contactStyles.input}
+        />
+        {/* </label> */}
       </div>
     )
   }

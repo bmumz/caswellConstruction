@@ -32,68 +32,76 @@ $font-color: #eeeeee;
   align-items: center;
   margin: 0 auto;
   padding: 0.5rem;
-  width: 20vw;
+
   height: auto;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  align-items: center;
+  width: 40vw;
   height: auto;
 }
+
 .exit-button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.label {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 15px;
-}
-
 .textbox {
-  min-width: 24vw;
-  max-width: 24vw;
+  min-width: 32vw;
+  max-width: 32vw;
   min-height: 20vh;
   font-size: 15px;
   line-height: normal;
   padding: 5px;
   border-radius: 5px;
   border: 0.5px solid $primary-color;
+  margin: 5px;
 }
 .input {
-  max-width: 20vw;
-  min-width: 20vw;
+  max-width: 32vw;
+  min-width: 32vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  min-width: 120%;
   padding: 5px;
   border-radius: 5px;
   border: 0.5px solid $primary-color;
   font-size: 15px;
-  margin: 0;
+  margin: 5px;
+}
+
+.button {
+  background-color: $secondary-color;
+  color: $primary-color;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 15px;
 }
 
 .buttonContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 10px;
-  border-radius: 10px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 40vw;
+  }
+  .textbox {
+    width: 47vw;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .form {
-    width: 100%;
-    overflow: scroll;
+    width: 40vw;
   }
   .textbox {
-    min-width: 0;
-    max-width: 0;
+    width: 47vw;
   }
 }

@@ -12,6 +12,8 @@ import layoutStyles from "../components/layout/layout.module.scss"
 
 import "../styles/index.scss"
 
+console.log(__dirname)
+
 class App extends Component {
   state = {
     show: false,
