@@ -33,19 +33,24 @@ class ContactForm extends Component {
 
   onSubmitEmail = event => {
     event.preventDefault()
-    let name = this.state.name
-    let email = this.state.email
-    let subject = this.state.subject
-    let message = this.state.message
 
-    let data = { name, email, subject, message }
-
-    axios.post("http://localhost:8001/contact", {
-      headers: { "Content-Type": "application/json" },
-      body: {
-        data,
-      },
-    })
+    axios
+      .post("http://localhost:8001/contact", {
+        headers: { "Content-Type": "application/json" },
+        data: this.state,
+      })
+      .then(response => {
+        if (response.data.status === "success") {
+          alert("Message Sent.")
+          this.resetForm()
+        } else if (response.data.status === "fail") {
+          alert("Message failed to send.")
+        }
+      })
+  }
+  resetForm() {
+    this.setState({ name: "", email: "", subject: "", message: "" })
+    document.getElementById("contact-form").reset()
   }
 
   render() {
