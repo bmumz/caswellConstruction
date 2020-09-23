@@ -1,0 +1,17 @@
+$almost-black: #444444;
+$yellow: #f3bd37;
+$font-color: #eeeeee;
+
+.promosBar {
+  color: $font-color;
+  font-weight: 500;
+  background-color: $almost-black;
+  padding-left: 0.5rem;
+  padding-top: 4px;
+}
+
+.duradekLogo {
+  min-width: 90px;
+  max-width: 5%;
+  margin: 2px 2px 0 2px;
+}

@@ -1,0 +1,17 @@
+.instagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.instagram__post {
+  margin: $s-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .instagram {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

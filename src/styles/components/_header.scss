@@ -1,0 +1,44 @@
+.header {
+  background-color: $yellow;
+  padding: $s-size 0;
+  font-size: $m-size;
+  border-bottom: 0.25px solid $less-black;
+}
+
+.header__title {
+  color: $almost-black;
+  font-weight: 400;
+}
+
+.header__logo {
+  width: 34%;
+  height: auto;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__item {
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+  }
+  .header__logo {
+    margin-top: 5px;
+  }
+  .header__item {
+    letter-spacing: 0.1rem;
+    font-size: $m-size;
+    padding-right: $s-size;
+  }
+}

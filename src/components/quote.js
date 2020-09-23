@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import layoutStyles from "./layout/layout.module.scss"
 import Modal from "../components/modal/Modal"
 
 class Quote extends Component {
@@ -31,21 +30,20 @@ class Quote extends Component {
   render() {
     return (
       <div id="quote">
-        <div className={layoutStyles.quoteContainer}>
-          <div className={layoutStyles.quote}>
-            Have a project you keep putting off?
-            <br />
-            Request your{" "}
+        <div className="quote">
+          <h2 className="quote__cta">Have a project you keep putting off?</h2>
+          <h2 className="quote__cta">
+            Request your
             <button
               type="button"
-              className={layoutStyles.quoteButton}
+              className="button quote--button"
               onClick={this.showModal}
             >
               FREE QUOTE
-            </button>{" "}
+            </button>
             <Modal show={this.state.show} handleClose={this.hideModal} />
             today!
-          </div>
+          </h2>
         </div>
       </div>
     )

@@ -1,0 +1,11 @@
+.container {
+  max-width: 105rem;
+  margin: 0 auto;
+  padding: 0 $m-size;
+}
+
+.container__header {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: $m-size;
+}

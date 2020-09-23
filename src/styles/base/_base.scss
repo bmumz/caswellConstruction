@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: $less-black;
+}
+
+a:hover {
+  color: $almost-black;
+  cursor: pointer;
+}
+
+a:active {
+  color: $almost-black;
+}
+body {
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  font-size: $m-size;
+  background-color: $almost-black;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $font-color;
+  font-size: $xl-size;
+}
+
+p {
+  margin-bottom: $l-size;
+  color: darken($font-color, 5);
+  font-weight: 200;
+}

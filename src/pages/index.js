@@ -1,18 +1,17 @@
 import React, { Component } from "react"
-import Promos from "../components/nav/promos"
-import Navbar from "../components/nav/navbar"
+import "normalize.css/normalize.css"
+
+import Header from "../components/header"
+import Insta from "../components/insta"
 import Image from "../components/image"
 import About from "../components/about"
 import Quote from "../components/quote"
 import Services from "../components/services"
 import OurWork from "../components/ourWork"
-import Contact from "../components/contact/contact"
+import Contact from "../components/contact"
 import Footer from "../components/footer"
-import layoutStyles from "../components/layout/layout.module.scss"
 
-import "../styles/index.scss"
-
-console.log(__dirname)
+import "../styles/styles.scss"
 
 class App extends Component {
   state = {
@@ -30,17 +29,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Promos />
-        <Navbar />
-        <Image />
-        <div className={layoutStyles.body}>
-          <About />
+        <Header />
 
-          <Quote />
+        <Image />
+
+        <div className="container">
+          <About />
+        </div>
+        <Quote />
+        <div className="container">
           <Services />
+          <Insta />
           <OurWork />
           <Contact />
-
           <Footer />
         </div>
       </div>
