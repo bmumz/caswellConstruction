@@ -1,14 +1,17 @@
 .button {
   background-color: $yellow;
-  color: $less-black;
-  text-transform: uppercase;
-  outline: none;
+  font-weight: 320;
   border: 0.5px solid $less-black;
+  color: $less-black;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: $s-size;
 }
 
 .button:hover {
-  color: $almost-black;
   border: 0.5px solid $less-black;
+  color: $almost-black;
 }
 
 @media (min-width: $desktop-breakpoint) {

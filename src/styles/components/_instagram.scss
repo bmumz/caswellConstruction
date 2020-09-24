@@ -1,4 +1,5 @@
 .instagram {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,7 @@
   margin: $s-size;
 }
 
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: 1000px) {
   .instagram {
     display: flex;
     flex-direction: row;

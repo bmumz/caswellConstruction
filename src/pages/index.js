@@ -8,7 +8,7 @@ import About from "../components/about"
 import Quote from "../components/quote"
 import Services from "../components/services"
 import OurWork from "../components/ourWork"
-import Contact from "../components/contact"
+import Contact from "../components/contact/contact"
 import Footer from "../components/footer"
 
 import "../styles/styles.scss"
@@ -41,7 +41,9 @@ class App extends Component {
           <Services />
           <Insta />
           <OurWork />
-          <Contact />
+        </div>
+        <Contact />
+        <div className="container">
           <Footer />
         </div>
       </div>

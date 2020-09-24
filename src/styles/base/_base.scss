@@ -3,8 +3,8 @@ html {
 }
 
 a {
-  text-decoration: none;
   color: $less-black;
+  text-decoration: none;
 }
 
 a:hover {
@@ -16,9 +16,9 @@ a:active {
   color: $almost-black;
 }
 body {
+  background-color: $almost-black;
   font-family: Helvetica, Arial, Helvetica, sans-serif;
   font-size: $m-size;
-  background-color: $almost-black;
 }
 
 button {
@@ -26,15 +26,19 @@ button {
 }
 
 h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
   color: $font-color;
   font-size: $xl-size;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 p {
-  margin-bottom: $l-size;
   color: darken($font-color, 5);
   font-weight: 200;
+  margin-bottom: $l-size;
+}
+
+textarea {
+  min-height: 15rem;
 }

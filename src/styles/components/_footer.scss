@@ -1,16 +1,6 @@
 .footer {
+  color: $font-color;
   display: flex;
   justify-content: center;
-  margin-bottom: $m-size;
-  color: $font-color;
-}
-
-.footer--copyright {
-  font-weight: 250;
-}
-
-.footer__title {
-  font-weight: 520;
-
-  text-transform: uppercase;
+  margin: $m-size 0 $m-size 0;
 }

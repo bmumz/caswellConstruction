@@ -23,9 +23,6 @@ const Header = () => (
           <AnchorLink href="#contact" className="header__item">
             contact
           </AnchorLink>
-          <AnchorLink href="#quote" className="header__item">
-            <button className="button">free quote</button>
-          </AnchorLink>
         </div>
       </div>
     </div>

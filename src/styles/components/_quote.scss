@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: $m-size;
 }
 
@@ -11,20 +10,11 @@
   color: $almost-black;
   font-size: $m-size;
   font-weight: 320;
-  text-transform: uppercase;
-  text-align: center;
   margin: $s-size 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.quote--button {
-  color: $almost-black;
-  font-weight: 320;
-  margin: 0 $m-size;
-}
-.quote--button:hover {
-  color: #333333;
-  border: 0.5px solid #333333;
-}
 @media (min-width: $desktop-breakpoint) {
   .quote__cta {
     font-size: $l-size;

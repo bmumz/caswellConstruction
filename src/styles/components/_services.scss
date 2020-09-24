@@ -1,25 +1,25 @@
 .services {
-  margin: $l-size;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: $l-size;
 }
 
 .services__container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 21rem;
   text-align: center;
+  width: 21rem;
 }
 
 .services__icon {
-  font-size: $xl-size;
-  color: $less-black;
   align-items: center;
   background-color: $yellow;
   border-radius: 100%;
+  color: $less-black;
   display: flex;
+  font-size: $xl-size;
   height: 50px;
   justify-content: center;
   padding: $s-size;
@@ -29,8 +29,8 @@
 .services__title {
   color: $font-color;
   font-weight: 350;
-  text-transform: uppercase;
   margin: $m-size 0 0 0;
+  text-transform: uppercase;
 }
 
 .services__blurb {

@@ -1,14 +1,11 @@
 import React, { Component } from "react"
-import contactStyles from "../contact/contact.module.scss"
 
 class ContactInput extends Component {
   render() {
     let { inputType, onChange } = this.props
 
     return (
-      <div className={contactStyles.form}>
-        {/* <label className={contactStyles.label} htmlFor={inputType}> */}
-        {/* {inputType} */}
+      <div>
         <input
           required
           placeholder={inputType}
@@ -16,9 +13,8 @@ class ContactInput extends Component {
           name={inputType}
           id={inputType}
           onChange={onChange}
-          className={contactStyles.input}
+          className="form__input"
         />
-        {/* </label> */}
       </div>
     )
   }
