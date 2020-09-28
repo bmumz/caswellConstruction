@@ -39,7 +39,7 @@ class ContactForm extends Component {
     this.setState({ emailStatus: true })
 
     axios
-      .post("http://localhost:8001/contact", {
+      .post("https://damp-scrubland-73792.herokuapp.com/contact", {
         headers: { "Content-Type": "application/json" },
         data: this.state,
       })

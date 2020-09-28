@@ -1,0 +1,30 @@
+.logo__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__title {
+  color: $almost-black;
+  margin-bottom: 0;
+  letter-spacing: 0.1rem;
+}
+.logo__subtitle {
+  color: $almost-black;
+  font-weight: 300;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 40vw;
+    height: auto;
+    align-items: center;
+  }
+  .logo__img {
+    width: 15%;
+  }
+}
