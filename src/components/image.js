@@ -8,7 +8,9 @@ const Image = () => {
       placeholderImage: file(relativePath: { eq: "unfinishedwall.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
+            base64
+            aspectRatio
+            src
           }
         }
       }
