@@ -15,6 +15,7 @@ class ContactForm extends Component {
       name: "",
       email: "",
       subject: "",
+
       message: "",
       emailStatus: undefined,
       confirmation: "",
@@ -110,7 +111,7 @@ class ContactForm extends Component {
             className="form__input"
           />
 
-          <input className="button " type="submit" value="send message" />
+          <input className="button " type="submit" value="let's talk!" />
         </form>
         <EmailConfirmation
           emailStatus={this.state.emailStatus}
