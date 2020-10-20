@@ -1,6 +1,9 @@
 .footer {
   color: $font-color;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: $m-size 0 $m-size 0;
+  p {
+    margin: 0;
+  }
 }

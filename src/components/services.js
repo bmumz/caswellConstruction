@@ -4,7 +4,7 @@ import {
   faPaintRoller,
   faTools,
   faHammer,
-  faHome,
+  faScroll,
 } from "@fortawesome/free-solid-svg-icons"
 
 const Services = () => (
@@ -14,7 +14,7 @@ const Services = () => (
     <div className="services">
       <div className="services__container">
         <div className="services__icon">
-          <FontAwesomeIcon icon={faHome} />
+          <FontAwesomeIcon icon={faScroll} />
         </div>
 
         <b className="services__title">Duradek Installation</b>

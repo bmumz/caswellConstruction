@@ -1,11 +1,7 @@
 import React, { Component } from "react"
 import "normalize.css/normalize.css"
-// import Logo from "../components/logo"
-// import Header from "../components/header"
-import HamburgerMenu from "../components/menu/hamburgerMenu"
 import Insta from "../components/insta"
-import HeroImage from "../components/images/heroImage"
-import HeroImageMobile from "../components/images/heroImageMobile"
+import Navigation from "../components/navigation"
 import About from "../components/about"
 import Quote from "../components/quote"
 import Services from "../components/services"
@@ -31,14 +27,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HamburgerMenu />
-
-        <div className="image__mobileVisibility">
-          <HeroImageMobile />
-        </div>
-        <div className="image__desktopVisibility">
-          <HeroImage />
-        </div>
+        <Navigation />
 
         <div className="container">
           <About />

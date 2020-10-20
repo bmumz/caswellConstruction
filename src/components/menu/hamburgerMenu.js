@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import Sidebar from "./sidebar"
+import Fade from "react-reveal/Fade"
 
 class HamburgerMenu extends Component {
   constructor(props) {
@@ -23,10 +24,19 @@ class HamburgerMenu extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.onToggle}>
-          <FontAwesomeIcon icon={faBars} />
-        </button>
-        {this.state.visibility && <Sidebar />}
+        <div className="nav__buttonContainer">
+          <button onClick={this.onToggle} className="nav__button">
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+
+          <div className="bg">
+            {this.state.visibility && (
+              <Fade left>
+                <Sidebar />
+              </Fade>
+            )}
+          </div>
+        </div>
       </div>
     )
   }

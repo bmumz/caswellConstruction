@@ -1,0 +1,46 @@
+.nav {
+  position: relative;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav__button {
+  color: $font-color;
+  background-color: transparent;
+  padding: $s-size;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  display: flex;
+  justify-items: center;
+  width: 4.5rem;
+}
+
+.nav__buttonContainer {
+  background-color: rgba(51, 51, 51, 0.94);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.nav__item {
+  color: $font-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: $m-size;
+  padding-right: $m-size;
+  margin: 0;
+}
+
+.nav__item:hover {
+  color: $less-black;
+  font-weight: 400;
+}
