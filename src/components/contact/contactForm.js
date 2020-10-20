@@ -40,7 +40,7 @@ class ContactForm extends Component {
     this.setState({ emailStatus: true })
 
     axios
-      .post("https://damp-scrubland-73792.herokuapp.com/contact", {
+      .post("https://caswell-construction-server.herokuapp.com/contact", {
         headers: { "Content-Type": "application/json" },
         data: this.state,
       })
@@ -76,7 +76,7 @@ class ContactForm extends Component {
           id="contact-form"
           onSubmit={this.onSubmitEmail}
           className="form"
-          action="https://damp-scrubland-73792.herokuapp.com/contact"
+          action="https://caswell-construction-server.herokuapp.com/contact"
           method="POST"
         >
           <ContactInput
