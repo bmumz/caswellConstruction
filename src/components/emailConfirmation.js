@@ -9,7 +9,6 @@ const EmailConfirmation = props => (
     <Modal
       isOpen={!!props.emailStatus}
       onRequestClose={props.handleClearEmailStatus}
-      appElement={document.getElementById("app")}
       contentLabel="Email Confirmation"
       className="modal"
     >
