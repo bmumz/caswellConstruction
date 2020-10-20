@@ -76,7 +76,7 @@ class ContactForm extends Component {
           id="contact-form"
           onSubmit={this.onSubmitEmail}
           className="form"
-          action="http://localhost:8001/contact"
+          action="https://damp-scrubland-73792.herokuapp.com/contact"
           method="POST"
         >
           <ContactInput
