@@ -3,7 +3,7 @@
   "description": "A simple landing page for Caswell Construction.",
   "version": "0.1.0",
   "author": "Brandi Mummery",
-  "engines":{
+  "engines": {
     "node": "12.16.1",
     "npm": "6.14.7"
   },
@@ -20,7 +20,7 @@
     "gatsby-background-image": "^1.1.2",
     "gatsby-image": "^2.4.9",
     "gatsby-plugin-instagram-embed": "^2.0.1",
-    "gatsby-plugin-manifest": "^2.4.14",
+    "gatsby-plugin-manifest": "^2.4.35",
     "gatsby-plugin-offline": "^3.2.13",
     "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-sass": "^2.3.12",
@@ -56,7 +56,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby serve",
+    "start": "npm run develop",
     "heroku-postbuild": "gatsby build",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

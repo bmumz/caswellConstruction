@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
 import ContactInput from "./contactInput"
-import EmailConfirmation from "../emailConfirmation"
+import EmailConfirmation from "./emailConfirmation"
 
 class ContactForm extends Component {
   constructor(props) {
