@@ -82,13 +82,13 @@ class ContactForm extends Component {
           <ContactInput
             id="name"
             inputType="Name"
-            required
             value={this.state.name}
             onChange={this.onNameChange}
           />
           <ContactInput
             id="email"
             inputType="Email"
+            placeholder="Email"
             required
             value={this.state.email}
             onChange={this.onEmailChange}
@@ -96,8 +96,7 @@ class ContactForm extends Component {
 
           <ContactInput
             id="subject"
-            required
-            inputType="Subject"
+            inputType="text"
             value={this.state.subject}
             onChange={this.onSubjectChange}
           />

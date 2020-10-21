@@ -19,14 +19,14 @@ const SEO = ({ title, keywords, description }) => {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
+      <title>{`${title} `}</title>
 
       <meta property="og:title" content={`${title}`} />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
         name="description"
-        content={`${description} | ${data.site.siteMetadata.title} | ${data.site.siteMetadata.description}`}
+        content={`${description}`}
       />
       <meta
         name="keywords"

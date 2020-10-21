@@ -14,7 +14,7 @@ module.exports = {
       "Nofolk County Ontario contractors",
       "Norfolk County painters",
       "Norfolk County flooring",
-      "Nofrolk County decking",
+      "Norfolk County decking",
       "Duradek installation Norfolk County",
       "painters in Delhi",
     ],

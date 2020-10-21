@@ -1,17 +1,19 @@
 import React from "react"
 import MenuItem from "./menuItem"
 
-const Sidebar = () => (
+const Sidebar = props => (
   <div>
-    <div className="nav__list">
-      <MenuItem link="#about" title="About Us" />
+    <ul role="presentation" onClick={props.onToggle}>
+      <div className="nav__list">
+        <MenuItem link="#about" title="About Us" />
 
-      <MenuItem link="#services" title="Our Services" />
+        <MenuItem link="#services" title="Our Services" />
 
-      <MenuItem link="#work" title="Our Work" />
+        <MenuItem link="#work" title="Our Work" />
 
-      <MenuItem link="#contact" title="Contact Us" />
-    </div>
+        <MenuItem link="#contact" title="Contact Us" />
+      </div>
+    </ul>
   </div>
 )
 

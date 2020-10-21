@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "normalize.css/normalize.css"
+import SEO from "../components/seo"
 import Insta from "../components/insta"
 import Navigation from "../components/navigation"
 import About from "../components/about"
@@ -27,6 +28,11 @@ class App extends Component {
   render() {
     return (
       <div>
+        <SEO
+          title="Caswell Construction | Norfolk County"
+          description="Husband & Wife Team— offering services including Duradek installation, window and door installation, flooring, decks, drywall, residential painting, storage & organizing."
+          keywords="renovations Norfolk County, construction Norfolk County, renovations Delhi Ontario, construction Norfolk County, "
+        />
         <Navigation />
 
         <div className="container">

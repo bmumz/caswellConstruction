@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import Sidebar from "./sidebar"
 import Fade from "react-reveal/Fade"
 
@@ -32,7 +32,7 @@ class HamburgerMenu extends Component {
           <div className="bg">
             {this.state.visibility && (
               <Fade left>
-                <Sidebar />
+                <Sidebar onToggle={this.onToggle} />
               </Fade>
             )}
           </div>
