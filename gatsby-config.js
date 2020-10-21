@@ -24,7 +24,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-instagram-embed`,
+
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `caswell`,
         short_name: `caswell-construction`,
         start_url: `/`,
         background_color: `#444444`,
