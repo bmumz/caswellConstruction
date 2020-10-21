@@ -1,88 +1,49 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+const SEO = ({ title, keywords, description }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          keywords
+          siteUrl
         }
       }
-    `
-  )
-
-  const metaDescription = description || site.siteMetadata.description
-
+    }
+  `)
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <Helmet>
+      <html lang="en" />
+      <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
+
+      <meta property="og:title" content={`${title}`} />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        name="description"
+        content={`${description} | ${data.site.siteMetadata.title} | ${data.site.siteMetadata.description}`}
+      />
+      <meta
+        name="keywords"
+        content={`${keywords} ${data.site.siteMetadata.keywords}`}
+      />
+      <meta name="author" content={data.site.siteMetadata.author} />
+      <meta
+        property="og:url"
+        name="url"
+        content={data.site.siteMetadata.siteUrl}
+      />
+      <meta
+        property="og:image"
+        content="https://i.ibb.co/R47CzV1/tools-Desktop.png"
+      />
+    </Helmet>
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

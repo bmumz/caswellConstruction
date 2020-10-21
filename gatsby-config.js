@@ -2,7 +2,24 @@ module.exports = {
   siteMetadata: {
     title: `Caswell Construction`,
     description: `Windows, Doors and More!`,
-    author: `@gatsbyjs`,
+    keywords: [
+      "Caswell Construction",
+      "general contractor Norfolk County",
+      "general contractor Delhi Ontario",
+      "Norfolk County renovations",
+      "renovations Norfolk County",
+      "small business Norfolk County",
+      "Delhi Ontario contractors",
+      "Delhi Ontario construction",
+      "Nofolk County Ontario contractors",
+      "Norfolk County painters",
+      "Norfolk County flooring",
+      "Nofrolk County decking",
+      "Duradek installation Norfolk County",
+      "painters in Delhi",
+    ],
+    author: `Brandi Mummery`,
+    siteUrl: `https://www.caswellconstruction.ca`,
   },
 
   plugins: [
