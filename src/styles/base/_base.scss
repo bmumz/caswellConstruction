@@ -34,6 +34,13 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  color: $almost-black;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 p {
   color: darken($font-color, 5);
   font-weight: 200;

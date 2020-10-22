@@ -16,8 +16,43 @@
   border: none;
   font-size: 3rem;
   display: flex;
-  justify-items: center;
-  width: 4.5rem;
+  justify-items: flex-end;
+  width: 4.6rem;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 600ms ease-in-out;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit-done {
+  opacity: 0;
 }
 
 .nav__buttonContainer {
@@ -44,3 +79,9 @@
   color: $less-black;
   font-weight: 400;
 }
+
+// @media (min-width: 820px) {
+//   .nav__buttonContainer {
+//     background-color: rgba(51, 51, 51, 0.94);
+//   }
+// }

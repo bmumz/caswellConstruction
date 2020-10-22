@@ -85,10 +85,10 @@ class ContactForm extends Component {
             value={this.state.name}
             onChange={this.onNameChange}
           />
+
           <ContactInput
             id="email"
             inputType="Email"
-            placeholder="Email"
             required
             value={this.state.email}
             onChange={this.onEmailChange}
@@ -96,21 +96,28 @@ class ContactForm extends Component {
 
           <ContactInput
             id="subject"
-            inputType="text"
+            inputType="Subject"
             value={this.state.subject}
             onChange={this.onSubjectChange}
           />
 
-          <textarea
-            id="message"
-            placeholder="Enter your message..."
-            required
-            value={this.state.message}
-            onChange={this.onMsgChange}
-            className="form__input"
-          />
+          <label htmlFor="Message" id="Message" className="form__inputs">
+            <p className="form__label"> Your Message:</p>
+            <textarea
+              id="message"
+              placeholder="Enter your message..."
+              required
+              value={this.state.message}
+              onChange={this.onMsgChange}
+              className="form__input"
+            />
+          </label>
 
-          <input className="button " type="submit" value="let's talk!" />
+          <input
+            className="button form__button"
+            type="submit"
+            value="let's talk!"
+          />
         </form>
         <EmailConfirmation
           emailStatus={this.state.emailStatus}

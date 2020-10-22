@@ -5,26 +5,38 @@
   margin: $m-size;
 }
 
-.form__input {
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  color: $almost-black;
+  margin: 0;
+  margin-top: $s-size;
+  margin-bottom: 0.4rem;
+}
+
+.form__button {
   margin: $s-size;
+}
+
+.form__input {
+  max-width: 70vw;
+  width: 70vw;
   padding: $s-size;
-  width: 30rem;
   border-radius: 5px;
   outline: none;
   border: 0.5px solid $almost-black;
 }
 
-textarea {
-  max-width: 30rem;
-  min-width: 30rem;
-}
-
 @media (min-width: $desktop-breakpoint) {
-  .form__input {
-    width: 50rem;
+  .form__inputs {
+    width: 35vw;
+    max-width: 35vw;
   }
-  textarea {
-    min-width: 50rem;
-    max-width: 50rem;
+  .form__input {
+    width: 35vw;
+    max-width: 35vw;
   }
 }

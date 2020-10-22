@@ -1,8 +1,12 @@
 import React, { Component } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 import Sidebar from "./sidebar"
-import Fade from "react-reveal/Fade"
+
+const HamburgerIcon = () => <FontAwesomeIcon icon={faBars} />
+
+const ExitIcon = () => <FontAwesomeIcon icon={faTimes} />
 
 class HamburgerMenu extends Component {
   constructor(props) {
@@ -22,20 +26,33 @@ class HamburgerMenu extends Component {
   }
 
   render() {
+    const isVisible = this.state.visibility
+    let button
+    if (!isVisible) {
+      button = <HamburgerIcon />
+    } else {
+      button = <ExitIcon />
+    }
     return (
       <div>
+        {" "}
         <div className="nav__buttonContainer">
           <button onClick={this.onToggle} className="nav__button">
-            <FontAwesomeIcon icon={faBars} />
+            {button}
           </button>
 
-          <div className="bg">
+          <TransitionGroup className="bg">
             {this.state.visibility && (
-              <Fade left>
+              <CSSTransition
+                in={isVisible}
+                appear={true}
+                timeout={300}
+                classNames="fade"
+              >
                 <Sidebar onToggle={this.onToggle} />
-              </Fade>
+              </CSSTransition>
             )}
-          </div>
+          </TransitionGroup>
         </div>
       </div>
     )

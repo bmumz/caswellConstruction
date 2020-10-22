@@ -1,17 +1,25 @@
 .contact {
   background-color: $yellow;
   padding: $m-size;
-}
-.contact__container {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  max-width: 986px;
 }
 
 .contact__title {
   color: $almost-black;
   margin-bottom: $m-size;
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.contact__blurb {
+  p {
+    color: $almost-black;
+  }
+  margin-top: $l-size;
 }
 
 .contact__method {
@@ -25,18 +33,14 @@
   color: $almost-black;
   cursor: pointer;
 }
-.contact__methodContainer {
-  margin-top: $xl-size;
-}
-.contact__blurb {
-  color: $almost-black;
-  margin-top: $l-size;
-}
 
-@media (min-width: 813px) {
+@media (min-width: $desktop-breakpoint) {
   .contact__container {
     display: flex;
     flex-direction: row;
-    max-width: 986px;
+  }
+  .contact__blurb {
+    margin-right: $l-size;
+    width: 35vw;
   }
 }
