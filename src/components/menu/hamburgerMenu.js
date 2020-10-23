@@ -29,19 +29,21 @@ class HamburgerMenu extends Component {
     const isVisible = this.state.visibility
     let button
     if (!isVisible) {
-      button = <HamburgerIcon />
+      button = (
+        <div className="nav__bars">
+          <HamburgerIcon />
+        </div>
+      )
     } else {
       button = <ExitIcon />
     }
     return (
       <div>
-        {" "}
+        <button onClick={this.onToggle} className="nav__button">
+          {button}{" "}
+        </button>
         <div className="nav__buttonContainer">
-          <button onClick={this.onToggle} className="nav__button">
-            {button}
-          </button>
-
-          <TransitionGroup className="bg">
+          <TransitionGroup>
             {this.state.visibility && (
               <CSSTransition
                 in={isVisible}
