@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://vibrant-galileo-c6cf3f.netlify.app/"
+  to = "https://caswellconstruction.ca"
+  status = 301
+  force = true
