@@ -52,49 +52,6 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-
-        {/* <div className="container">
-          <h1 className="contact__title">Contact Us</h1>
-
-          <div className="contact__container">
-            <div className="contact__methodContainer">
-              <p className="contact__blurb">
-                {" "}
-                We'd be happy to answer any questions you may have about your
-                next project— and provide a free quote!
-              </p>
-              <p className="contact__blurb">
-                Please fill out the contact form and we'll be in touch as soon
-                as possible! You could also email us directly at{" "}
-                <b>caswellconstruction03@gmail.com</b>
-              </p>
-              <p className="contact__method">
-                <FontAwesomeIcon icon={faMobileAlt} /> 226-206-0546
-              </p>
-              <p className="contact__method">
-                <a
-                  href="https://www.facebook.com/caswellconstruction03"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="contact--link"
-                >
-                  <FontAwesomeIcon icon={faFacebook} />{" "}
-                </a>
-              </p>
-              <p className="contact__method">
-                <a
-                  href="https://www.instagram.com/caswellconstruction03"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="contact--link"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />{" "}
-                </a>
-              </p>
-            </div>
-            <ContactForm />
-          </div>
-        </div> */}
       </div>
     </div>
   )

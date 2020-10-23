@@ -41,7 +41,22 @@ module.exports = {
   },
 
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID || "none",
+        head: true,
+      },
+    },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.caswellconstruction.ca",
+        sitemap: "https://www.caswellconstruction.ca/sitemap.xml",
+      },
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {

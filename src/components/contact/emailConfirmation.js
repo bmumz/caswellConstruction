@@ -16,7 +16,11 @@ const EmailConfirmation = props => (
       {props.confirmation && (
         <p className="modal__confirmationText">{props.confirmation}</p>
       )}
-      <button className="button" onClick={props.handleClearEmailStatus}>
+      <button
+        className="button"
+        aria-label="Close Window"
+        onClick={props.handleClearEmailStatus}
+      >
         Close Window
       </button>
     </Modal>

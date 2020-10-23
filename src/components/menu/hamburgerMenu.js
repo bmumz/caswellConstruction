@@ -39,7 +39,11 @@ class HamburgerMenu extends Component {
     }
     return (
       <div>
-        <button onClick={this.onToggle} className="nav__button">
+        <button
+          onClick={this.onToggle}
+          aria-label="Navigation Menu"
+          className="nav__button"
+        >
           {button}{" "}
         </button>
         <div className="nav__buttonContainer">

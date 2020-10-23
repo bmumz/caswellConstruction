@@ -1,17 +1,31 @@
 .button {
-  background-color: $yellow;
-  font-weight: 300;
+  background-color: transparent;
   border: 0.5px solid $less-black;
-  color: $less-black;
+  color: $almost-black;
+  font-weight: 300;
   outline: none;
   text-transform: uppercase;
+  transition: all 0.6s ease-in-out;
   cursor: pointer;
   padding: $s-size;
+  a {
+    color: $almost-black;
+  }
 }
 
 .button:hover {
-  border: 0.5px solid $less-black;
-  color: $almost-black;
+  color: $font-color;
+  background: rgb(68, 68, 68);
+
+  background: linear-gradient(
+    53deg,
+    rgba(68, 68, 68, 1) 53%,
+    rgba(73, 73, 73, 1) 100%
+  );
+  a {
+    color: $font-color;
+    transition: all 0.6s ease-in-out;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
