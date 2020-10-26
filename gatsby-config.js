@@ -41,20 +41,32 @@ module.exports = {
   },
 
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID || "none",
-        head: true,
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://www.caswellconstruction.ca",
         sitemap: "https://www.caswellconstruction.ca/sitemap.xml",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `caswell`,
+        short_name: `caswell-construction`,
+        start_url: `/`,
+        background_color: `#444444`,
+        theme_color: `#444444`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+        head: true,
       },
     },
     {
@@ -87,17 +99,5 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `caswell`,
-        short_name: `caswell-construction`,
-        start_url: `/`,
-        background_color: `#444444`,
-        theme_color: `#444444`,
-        display: `standalone`,
-        icon: `src/images/icon.png`,
-      },
-    },
   ],
 }
