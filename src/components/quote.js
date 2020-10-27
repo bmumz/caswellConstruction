@@ -7,9 +7,9 @@ const Quote = () => (
       <h2 className="quote__cta">Have a project you keep putting off?</h2>
 
       <h2 className="quote__cta">
-        <button className="button" aria-label="Contact Us">
-          <AnchorLink href="#contact">Contact us</AnchorLink>
-        </button>
+        <AnchorLink href="#contact" className="button">
+          Contact us
+        </AnchorLink>
       </h2>
 
       <h2 className="quote__cta">today for a FREE QUOTE!</h2>

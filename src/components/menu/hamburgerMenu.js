@@ -30,9 +30,9 @@ class HamburgerMenu extends Component {
     let button
     if (!isVisible) {
       button = (
-        <div className="nav__bars">
+        <p className="nav__bars">
           <HamburgerIcon />
-        </div>
+        </p>
       )
     } else {
       button = <ExitIcon />

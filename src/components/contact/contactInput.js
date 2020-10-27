@@ -6,13 +6,12 @@ class ContactInput extends Component {
 
     return (
       <div>
-        <label htmlFor={inputType} id={id} className="form__inputs">
-          <p className="form__label">{inputType}</p>
+        <label htmlFor={inputType} id={id} className="form__inputs form__label">
+          {inputType}
 
           <input
-            required
+            type="text"
             placeholder={inputType}
-            type={inputType}
             name={inputType}
             id={inputType}
             onChange={onChange}
