@@ -4,7 +4,9 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 import Sidebar from "./sidebar"
 
-const HamburgerIcon = () => <FontAwesomeIcon icon={faBars} />
+const HamburgerIcon = () => (
+  <FontAwesomeIcon icon={faBars} className="nav__bars" />
+)
 
 const ExitIcon = () => <FontAwesomeIcon icon={faTimes} />
 
@@ -29,11 +31,7 @@ class HamburgerMenu extends Component {
     const isVisible = this.state.visibility
     let button
     if (!isVisible) {
-      button = (
-        <p className="nav__bars">
-          <HamburgerIcon />
-        </p>
-      )
+      button = <HamburgerIcon />
     } else {
       button = <ExitIcon />
     }

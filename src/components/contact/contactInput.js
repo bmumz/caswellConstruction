@@ -11,6 +11,7 @@ class ContactInput extends Component {
 
           <input
             type="text"
+            required
             placeholder={inputType}
             name={inputType}
             id={inputType}

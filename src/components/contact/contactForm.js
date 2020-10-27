@@ -104,6 +104,7 @@ class ContactForm extends Component {
           <label htmlFor="Message" className="form__inputs form__label">
             Your Message:
             <textarea
+              id="Message"
               placeholder="Enter your message..."
               required
               value={this.state.message}
