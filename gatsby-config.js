@@ -90,6 +90,7 @@ module.exports = {
 
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-instagram-embed",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

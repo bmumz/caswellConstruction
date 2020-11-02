@@ -7,14 +7,14 @@ const OurWork = () => {
       <h1 id="work">Our Work</h1>
       <div className="instagram">
         <div className="instagram__post">
-          <Insta postUrl="https://www.instagram.com/p/CFS0rU5nK1e/" />
+          <Insta postUrl="https://www.instagram.com/p/CHBwAuFnvcs/?utm_source=ig_embed&utm_campaign=loading" />
         </div>
 
         <div className="instagram__post">
-          <Insta postUrl="https://www.instagram.com/p/CDXZE8_Hb9i/" />
+          <Insta postUrl="https://www.instagram.com/p/CGkPtlBnJIm/?utm_source=ig_embed&utm_campaign=loading" />
         </div>
         <div className="instagram__post">
-          <Insta postUrl="https://www.instagram.com/p/CCvv778HvPH/" />
+          <Insta postUrl="https://www.instagram.com/p/CG8s7MbHSFF/?utm_source=ig_embed&utm_campaign=loading" />
         </div>
       </div>
     </div>

@@ -41,7 +41,6 @@ class App extends Component {
         <Quote />
         <div className="container">
           <Services />
-          <Insta />
           <OurWork />
         </div>
         <Contact />
