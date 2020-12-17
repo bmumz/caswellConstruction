@@ -8,7 +8,7 @@ const HeroImage = () => {
       desktopImage: file(relativePath: { eq: "toolsDesktop.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
