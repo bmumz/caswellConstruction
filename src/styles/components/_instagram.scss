@@ -7,10 +7,10 @@
 }
 
 .instagram__post {
-  margin: $s-size;
+  margin: $m-size;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .instagram {
     display: flex;
     flex-direction: row;

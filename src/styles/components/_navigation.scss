@@ -53,11 +53,12 @@
   padding-top: $l-size;
   padding-right: $m-size;
   margin: 0;
+  font-size: $l-size;
 }
 
 .nav__item:hover {
   color: $less-black;
-  font-weight: 400;
+  font-weight: 500;
 }
 //TRANSITION STYLES
 .fade-appear {

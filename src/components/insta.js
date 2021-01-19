@@ -35,6 +35,7 @@ export default class Insta extends Component {
                 width: "100%",
               }}
               target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <div

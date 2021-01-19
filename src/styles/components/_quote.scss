@@ -8,15 +8,15 @@
 
 .quote__cta {
   color: $almost-black;
-  font-size: $m-size;
+  margin: $s-size;
+  font-size: 2.2rem;
   font-weight: 300;
-  margin: $s-size 0 0 0;
   text-align: center;
   text-transform: uppercase;
 }
 
 @media (min-width: $desktop-breakpoint) {
   .quote__cta {
-    font-size: $l-size;
+    font-size: 2.5rem;
   }
 }

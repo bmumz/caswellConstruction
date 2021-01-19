@@ -1,46 +1,66 @@
 .services {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  margin: $l-size;
 }
 
-.services__container {
+.service__container {
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 21rem;
+  padding: 1rem;
 }
 
-.services__icon {
+.service__icon {
   align-items: center;
   background-color: $yellow;
   border-radius: 100%;
   color: $less-black;
   display: flex;
   font-size: $xl-size;
+  width: 50px;
   height: 50px;
   justify-content: center;
   padding: $s-size;
-  width: 50px;
 }
 
-.services__title {
+.service__title {
   color: $font-color;
-  font-weight: 300;
-  margin: $m-size 0 0 0;
   text-transform: uppercase;
+  padding-top: $m-size;
+  font-weight: 500;
+
+  text-align: center;
 }
 
-.services__blurb {
-  margin-top: $s-size;
+.service__blurb {
+  text-align: center;
+  margin-top: $m-size;
+  padding: $s-size;
+  color: $font-color;
+}
+
+.test {
+  padding: $s-size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: $desktop-breakpoint) {
   .services {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  .test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service__title {
+    width: 10vw;
   }
 }

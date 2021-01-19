@@ -103,24 +103,11 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          {
-            resolve: "gatsby-remark-embedder",
-            options: {
-              customTransformers: [
-                // Your custom transformers
-              ],
-              services: {
-                // The service-specific options by the name of the service
-              },
-            },
-          },
+          "gatsby-remark-embedder"
         ],
       },
     },
-
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-instagram-embed",
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -128,7 +115,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-instagram-embed`,
+  
+   
   ],
 }
