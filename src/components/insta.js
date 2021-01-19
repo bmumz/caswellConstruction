@@ -289,6 +289,7 @@ export default class Insta extends Component {
                   textDecoration: "none",
                 }}
                 target="_blank"
+                rel="noreferrer"
               >
                 A post shared by Caswell Construction (@caswellconstruction03)
               </a>{" "}
